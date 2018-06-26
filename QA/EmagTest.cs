@@ -30,7 +30,7 @@ namespace EmagTest
             addProduct.Submit();
 
             IWebElement basketElement = driver.FindElement(By.XPath("//*[@id=\"vendorsContainer\"]/div/div[1]/div/div[2]/div[1]/div[1]/a"));
-            Assert.AreEqual(basketElement.Text, "Тостер Star-Light TS-800W, 800 W, 2 филии, Регулируема степен на изпичане, Функция размразяване, Инокс");
+            Assert.AreEqual("Тостер Star-Light TS-800W, 800 W, 2 филии, Регулируема степен на изпичане, Функция размразяване, Инокс", basketElement.Text);
 
             driver.Close();
             driver.Quit();
